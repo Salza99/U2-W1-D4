@@ -95,3 +95,37 @@ p {
     rgba(0, 0, 0, 0.1047269249496674) 100%
   );
 }
+h2 {
+  font-size: 1.2rem;
+}
+span {
+  color: aqua;
+  font-weight: 600;
+}
+.secondo,
+.terzo {
+  opacity: 0;
+}
+@keyframes scritta {
+  from {
+    /* opacity: 0; */
+    transform: rotateX(90deg);
+  }
+  to {
+    /* opacity: 1; */
+    transform: rotateX(180deg);
+  }
+}
+@keyframes scomparsa {
+  from {
+    /* opacity: 1; */
+    transform: rotateX(90deg);
+  }
+  to {
+    /* opacity: 0; */
+    transform: rotateX(180deg);
+  }
+}
+.primo {
+  animation: scomparsa 2s;
+}
